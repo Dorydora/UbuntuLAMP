@@ -1,0 +1,52 @@
+html {
+background-image:url("FSS-1800.jpg");
+}
+body{
+    margin: auto;
+    background-image:url(taupeTile.png);
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    width: 100%;
+    max-width: 925px;
+}
+header{
+    width: 100%;
+    max-width: 925px; min-width: 480px;
+}
+nav{
+    background-color: -#633;
+    color: white;
+}
+ul{
+    display: inline;
+    list-style-type:none;
+    background-color: -#633;
+    color: white;
+    padding:0;
+    margin:0;
+    width:100%;
+}
+li{
+    float: left;
+    display: block;
+    background-color: -#633;
+    color: white;
+    text-align: center;
+    padding: 5px 5px 5px 25px;
+}
+li:hover{
+    background-color: #F93;
+    color: #600;
+}
+article{
+    padding: 20px;
+    clear: left;
+}
+img#yarra-melb{
+    width: 300px;
+    height:225px;
+}
+footer{
+    background-color: #948D67;
+    padding: 20px; clear: left;
+}
