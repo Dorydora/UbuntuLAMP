@@ -11,30 +11,38 @@ body{
 }
 header{
     width: 100%;
-    max-width: 925px; min-width: 480px;
+    max-width: 925px;
+    min-width: 480px;
+}
+.image{
+    width: 100%;
+    height:auto;
+    max-width: 925px;
+    max-height: 480px;
 }
 nav{
     background-color: -#633;
     color: white;
 }
 ul{
+    list-style:none;
+    padding:none;
+    margin:none;
+    width: 100%;
     display: inline;
-    list-style-type:none;
-    background-color: -#633;
-    color: white;
-    padding:0;
-    margin:0;
-    width:100%;
 }
 li{
     float: left;
-    display: block;
-    background-color: -#633;
-    color: white;
+    width: 20%;
     text-align: center;
-    padding: 5px 5px 5px 25px;
 }
-li:hover{
+a:link, :visited {
+    display: block;
+    padding: 5px 5px 5px 25px;
+    background-color: #633;
+    color: white;
+}
+a:hover, :focus{
     background-color: #F93;
     color: #600;
 }
@@ -42,11 +50,16 @@ article{
     padding: 20px;
     clear: left;
 }
-img#yarra-melb{
-    width: 300px;
-    height:225px;
-}
 footer{
     background-color: #948D67;
-    padding: 20px; clear: left;
+    padding: 20px;
+    clear: left;
+}
+img#tram{
+    width: 400px;
+    height:255px;
+}
+img#yarra{
+    width: 400px;
+    height:255px;
 }
