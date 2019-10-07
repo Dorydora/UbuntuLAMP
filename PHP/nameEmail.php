@@ -1,2 +1,2 @@
-username is: <?php echo htmlspecialchars($_POST['name']); ?>.
-Email is: <?php echo($_POST['rego']); ?>. 
+username is: <?php echo htmlspecialchars($_POST['Username']); ?>.
+Email is: <?php echo($_POST['Email address']); ?>. 
