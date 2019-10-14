@@ -11,7 +11,7 @@
 
         if (isset($_POST["submit"])) {
             echo("<p>The array contains:</p>");
-            $strNames = $+POST['strNames'];
+            $strNames = $_POST['strNames'];
             $arrNames = explode("|",$strNames);
             for($intCount=0 ;$intcount<4 ;$intCount++)
                 echo"<p>" . $arrNames[$intCount] . "</p>";
@@ -27,6 +27,6 @@
         <form action ='<?php echo $_SERVER["PHP_SELF"]; ?>'methods='post'>
         <p><input type='hidden' name='strNames' value='<?php echo $strNames ?>'/>
         <input type='submit' name='submit'/></p>
-    </form>
+        </form>
     </body>
 </html>
