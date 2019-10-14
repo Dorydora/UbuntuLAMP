@@ -14,7 +14,7 @@
         
         );
         foreach($arrCars["Make"] as $strKey=>$strMake){
-            $strColor = $arrCars["Color"][@strKey];
+            $strColor = $arrCars["Color"][$strKey];
             $intQuantity = $arrCars["Quantity"][$strKey];
             echo "<p>Make: $strMake Color: $strColor Quantity: $intQuantity</p>";
         }
