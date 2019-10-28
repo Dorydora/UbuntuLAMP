@@ -13,8 +13,8 @@ $sql="CREATE TABLE Persons
     PRIMARY KEY(PID),
     FirstName CHAR(15),
     LastName CHAR(15),
-    Age INT,
-)";
+    Age INT
+);";
 
 // Execute query
 if (mysqli_query($con,$sql)) {
