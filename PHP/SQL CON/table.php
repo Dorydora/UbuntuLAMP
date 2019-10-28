@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors',1);
 $con=mysqli_connect("localhost","admin","Password1!","my_db");
 
 // Check connection
@@ -14,7 +16,7 @@ $sql="CREATE TABLE Persons
     FirstName CHAR(15),
     LastName CHAR(15),
     Age INT
-);";
+)";
 
 // Execute query
 if (mysqli_query($con,$sql)) {
