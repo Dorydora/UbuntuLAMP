@@ -9,9 +9,9 @@ if (mysqli_connect_errno()) {
 }
 
 // escape variables for security
-$firstname = mysqli_real_escape_string($con, $_POST['firstname']);
-$lastname = mysqli_real_escape_string($con, $_POST['lastname']);
-$age = mysqli_real_escape_string($con, $_POST['age']);
+$firstname = mysqli_real_escape_string($con, $_POST["firstname"]);
+$lastname = mysqli_real_escape_string($con, $_POST["lastname"]);
+$age = mysqli_real_escape_string($con, $_POST["age"]);
 
 $sql="INSERT INTO Persons (FirstName, LastName, Age)
 VALUES ('$firstname', '$lastname', '$age')";
