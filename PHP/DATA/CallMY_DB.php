@@ -11,7 +11,7 @@ if (mysqli_connect_errno()) {
 
 $result = mysqli_query($con,"SELECT * FROM Persons");
 
-while($row = mysqli_fetch_array($result)) {
+while($row = mysqli_fetch_array($result)){
   echo $row['FirstName'] . " " . $row['LastName'];
   echo "<br>";
 }
