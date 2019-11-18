@@ -5,7 +5,7 @@
 	$password = "Password1";
 	
 		// Connect to Database and alert if error
-	$DBConnect=mysqli_connect("localhost","root","","CS_Tools");
+	$DBConnect=mysqli_connect("localhost","admin","Password1!","MGCSTools");
 	if (mysqli_connect_errno())
 	{
 		echo "Failed to connect to Database: " . mysqli_connect_error();
