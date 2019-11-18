@@ -2,7 +2,7 @@
 
 <?php
 	$username = "admin";
-	$password = "Password1";
+	$password = "Password1!";
 	
 		// Connect to Database and alert if error
 	$DBConnect=mysqli_connect("localhost","admin","Password1!","MGCSTools");
