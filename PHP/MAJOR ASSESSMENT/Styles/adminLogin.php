@@ -7,7 +7,7 @@
 	}
 ?>
 <html>
-<form action="adminLoginConfirmation.php" method="post">
+<form action="adminLoginConfirm.php" method="post">
 					<table>
 						<tr>
 							<td>Username:</td>
