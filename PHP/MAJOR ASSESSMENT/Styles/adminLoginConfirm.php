@@ -51,7 +51,6 @@
 
 		  </section>
 	  </div>
-	<a href = "addPart.php"> Add A Part</a>
    </body>
 
 </html>
