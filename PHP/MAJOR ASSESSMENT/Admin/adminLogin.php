@@ -21,6 +21,6 @@
 							<td><input type='submit'/></td>
 						</tr>
 					</table>
-				<p>The logon is "admin", "Password1".</p>
+				<p>The logon is "admin", "Password1!".</p>
 				</form>
 </html>
