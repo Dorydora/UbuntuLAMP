@@ -16,7 +16,7 @@
 	$Price = mysqli_real_escape_string($DBConnect, $_POST['Price']);
 	$PartNum = $_GET['ID'];
 	
-	$changeData = "UPDATE Parts SET PartName ='$PartName', Description = '$Description', Specs = '$Specs', OnHand = '$OnHand', Category = '$CatName', Warehouse = '$Warehouse', Price = '$Price'
+	$changeData = "UPDATE PARTS SET PartName ='$PartName', Description = '$Description', Specs = '$Specs', OnHand = '$OnHand', Category = '$CatName', Warehouse = '$Warehouse', Price = '$Price'
 				   WHERE PartNum = '$PartNum'";
 	
 	if (mysqli_query($DBConnect, $changeData))

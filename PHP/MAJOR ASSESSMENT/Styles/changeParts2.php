@@ -51,18 +51,18 @@
 							<select name="CatName" required>
 								
 								<?php        //SEARCH FOR CATEGORIES
-									$DBConnect = mysqli_connect("localhost","root","","CS_Tools");
-									$SQLQuery =  "SELECT * FROM Categories";
+									$DBConnect = mysqli_connect("localhost","admin","Password1!","MGCSTools");
+									$SQLQuery =  "SELECT DISTINCT Category FROM PARTS";
 									$result = mysqli_query($DBConnect, $SQLQuery);
 									
 									while ($row = mysqli_fetch_array($result))
 									{
 										echo "<option ";
-										if ($row['CatName'] == $Category)
+										if ($row['Category'] == $Category)
 										{
 											echo 'selected';
 										}
-										echo ">" . $row['CatName'] . "</option> ";
+										echo ">" . $row['Category'] . "</option> ";
 									}
 								?>
 								
