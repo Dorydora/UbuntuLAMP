@@ -11,7 +11,7 @@
 	$Description = mysqli_real_escape_string($DBConnect, $_POST['Description']);
 	$Specs = mysqli_real_escape_string($DBConnect, $_POST['Specs']);
 	$OnHand = mysqli_real_escape_string($DBConnect, $_POST['OnHand']);
-	$CatName = mysqli_real_escape_string($DBConnect, $_POST['CatName']);
+	$CatName = mysqli_real_escape_string($DBConnect, $_POST['Category']);
 	$Warehouse = mysqli_real_escape_string($DBConnect, $_POST['Warehouse']);
 	$Price = mysqli_real_escape_string($DBConnect, $_POST['Price']);
 	$PartNum = $_GET['ID'];

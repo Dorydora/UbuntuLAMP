@@ -48,7 +48,7 @@
 							<td>Category Name:</td>
 							<td> 
 							
-							<select name="CatName" required>
+							<select name="Category" required>
 								
 								<?php        //SEARCH FOR CATEGORIES
 									$DBConnect = mysqli_connect("localhost","admin","Password1!","MGCSTools");
@@ -62,7 +62,7 @@
 										{
 											echo 'selected';
 										}
-										echo ">" . $row['Category'] . "</option> ";
+										echo ">" . $row['Category\'] . "</option> ";
 									}
 								?>
 								
