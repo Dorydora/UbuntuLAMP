@@ -62,7 +62,7 @@
 										{
 											echo 'selected';
 										}
-										echo ">" . $row['Category\'] . "</option> ";
+										echo ">" . $row['Category'] . "</option> ";
 									}
 								?>
 								
