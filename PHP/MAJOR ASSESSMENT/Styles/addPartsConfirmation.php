@@ -16,7 +16,7 @@
 	$Warehouse = mysqli_real_escape_string($DBConnect, $_POST['Warehouse']);
 	$Price = mysqli_real_escape_string($DBConnect, $_POST['Price']);
 	
-	$insertData = "INSERT INTO Parts (PartName, Description, Specs, OnHand, Category, Warehouse, Price)
+	$insertData = "INSERT INTO PARTS (PartName, Description, Specs, OnHand, Category, Warehouse, Price)
 				   VALUES ('$PartName', '$Description', '$Specs', '$OnHand', '$CatName', '$Warehouse', '$Price')";
 	
 	if (mysqli_query($DBConnect, $insertData))
