@@ -27,12 +27,12 @@
 								
 								<?php        //SEARCH FOR CATEGORIES
 									$DBConnect = mysqli_connect("localhost","admin","Password1!","MGCSTools");
-									$SQLQuery =  "SELECT * FROM Categories";
+									$SQLQuery =  "SELECT DISTINCT Category FROM PARTS";
 									$result = mysqli_query($DBConnect, $SQLQuery);
 									
 									while ($row = mysqli_fetch_array($result))
 									{
-										echo "<option>" . $row['CatName'] . "</option> ";
+										echo "<option>" . $row['Category'] . "</option> ";
 									}
 								?>
 								
