@@ -4,7 +4,7 @@
 					{
 						echo "Failed to connect to Database: " . mysqli_connect_error();
 					}
-					$SQLQuery =  "SELECT * FROM Parts";
+					$SQLQuery =  "SELECT * FROM PARTS";
 					$result = mysqli_query($DBConnect, $SQLQuery);
 					
 					echo "<table id='results'>
