@@ -49,7 +49,7 @@ ul {
 }
 
 ul.nav li {
-    display:block;
+    display:inline;
     float:left;
 }
 
