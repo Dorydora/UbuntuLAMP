@@ -3,7 +3,7 @@
    <head>
        
       <link href="styles.css"rel="stylesheet" type="text/css">
-      <title> Example Only</title>
+      <title> Index</title>
    </head>
    <body>
       <div class="container">
