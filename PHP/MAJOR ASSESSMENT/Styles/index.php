@@ -28,40 +28,7 @@
          This is content. This should be displayed under the list.
          Note this element is nested within the content div to allow the padding to work more effectively.
          </p>
-         <h3>Sample Table </h3>
-
-         <?php
-         $con = mysqli_connect("localhost","admin","Password1!", "MGCSTools");
-         // Check connection
-         if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
-         }
-         $partsResults = mysqli_query($con, "SELECT * FROM PARTS LIMIT 4");
-         echo "<table border='1'>";
-         echo "<thead>";
-         echo "<tr>";
-         $partsTitles = mysqli_query($con, "SHOW COLUMNS FROM PARTS");
-         while ($row = mysqli_fetch_assoc($partsTitles)) {
-            echo "<th>" . $row['Field'] . "</th>";
-         }
-         echo "</tr>";
-         echo "</thead>";
-         echo "<tbody>";
-         while($row = mysqli_fetch_array($partsResults)) {
-            echo "<tr>";
-            echo "<td>" . $row['PartNum'] . "</td>";
-            echo "<td>" . $row['PartName'] . "</td>";
-            echo "<td>" . $row['Description'] . "</td>";
-            echo "<td>" . $row['Specs'] . "</td>";
-            echo "<td>" . $row['OnHand'] . "</td>";
-            echo "<td>" . $row['Category'] . "</td>";
-            echo "<td>" . $row['Warehouse'] . "</td>";
-            echo "<td>" . $row['Price'] . "</td>";
-            echo "</tr>";
-         }
-         echo "</tbody>";
-         echo "</table>";
-         ?>
+        
 
          <h3> Sample Form </h3>
          <table class="formtab">
