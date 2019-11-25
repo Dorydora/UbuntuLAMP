@@ -9,7 +9,7 @@
 	
 	$PartNum = $_GET['ID'];
 	
-	$SQLQuery =  "SELECT * FROM Parts WHERE PartNum = $PartNum";
+	$SQLQuery =  "SELECT * FROM PARTS WHERE PartNum = $PartNum";
 	$result = mysqli_query($DBConnect, $SQLQuery);
 	while ($row = mysqli_fetch_array($result))
 		{
