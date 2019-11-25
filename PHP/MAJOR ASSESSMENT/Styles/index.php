@@ -24,7 +24,7 @@
          </div>
       <div class="content">
       <div class="innerContent">
-         <p>arts
+         <p>
          This is index page. Welcome.
          </p>
         
