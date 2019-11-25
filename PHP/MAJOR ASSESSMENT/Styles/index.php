@@ -48,5 +48,10 @@
             <a id = "login" href = "adminLogin.php">Login</a>
          </div>
       </div>
+      </div></div>
+   <div class="footer">
+   Login to Admin.
+    Copyright statement.
+</div>   
    </body>
 </html>
