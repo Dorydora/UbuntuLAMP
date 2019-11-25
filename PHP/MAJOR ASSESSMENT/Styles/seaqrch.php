@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="styles.css"rel="stylesheet" type="text/css">
+      <title> Example Only</title>
+   </head>
+   <body>
+      <div class="container">
+         <div class="header">
+         <!--you can add your banner in place of mine below-->
+         <img src= "banner.jpg"width="900"/>
+         </div>
+         <!-- note navbar is same width as banner -->
+         <div class="navbar">
+            <ul class="nav">
+               <li><a href="index.php">Index</a></li>
+               <li><a href="search.php">Search</a></li>
+               <li><a href="results.php">Results</a></li>
+               <li><a href="resultCategories.php">Result Categories</a></li>
+               <li><a href="reviews.php">Reviews</a></li>
+               <li><a href="contactUs.php">Contact Us</a></li>
+            </ul>
+         </div>
+      <div class="content">
+         <div class="innerContent">
+            <h3>Search products</h3>
+            <form method="post" action="search.php?go" id="searchForm">
+               <input type="text" name="searchstring">
+               <input type="submit" name="submit" value="Search">
+            </form>
+            <br>
+            <br>
+            <?php
+               if(isset($_POST['submit'])) {
+                  if(isset($_GET['go'])) {
+                     $keyword=$_POST['searchstring'];
+                     $con = mysqli_connect("localhost","admin","Password1!", "CS_Tools");
+                     // Check connection
+                     if (mysqli_connect_errno()) {
+                        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+                     }
+            
+                     $partsResults = mysqli_query($con, "SELECT * FROM PARTS WHERE PartName LIKE '%" . $keyword . "%'
+                                                         OR Description LIKE '%" . $keyword . "%'
+                                                         OR Specs LIKE '%" . $keyword . "%'");
+                     echo "<table border='1'>";
+                     echo "<thead>";
+                     echo "<tr>";
+                     $partsTitles = mysqli_query($con, "SHOW COLUMNS FROM PARTS");
+                     while ($row = mysqli_fetch_assoc($partsTitles)) {
+                        echo "<th>" . $row['Field'] . "</th>";
+                     }
+                     echo "</tr>";
+                     echo "</thead>";
+                     echo "<tbody>";
+                     while($row = mysqli_fetch_array($partsResults)) {
+                        echo "<tr>";
+                        echo "<td>" . $row['PartNum'] . "</td>";
+                        echo "<td>" . $row['PartName'] . "</td>";
+                        echo "<td>" . $row['Description'] . "</td>";
+                        echo "<td>" . $row['Specs'] . "</td>";
+                        echo "<td>" . $row['OnHand'] . "</td>";
+                        echo "<td>" . $row['Category'] . "</td>";
+                        echo "<td>" . $row['Warehouse'] . "</td>";
+                        echo "<td>" . $row['Price'] . "</td>";
+                        echo "</tr>";
+                     }
+                     echo "</tbody>";
+                     echo "</table>";
+                     } 
+                  }        
+            ?>
+            </div>
+         </div>
+         <div class="footer">
+            <p id = "copyright">Copyright statement.</p>
+            <a id = "login" href = "adminLogin.php">Login</a>
+         </div>
+      </div>
+   </body>
+</html>
