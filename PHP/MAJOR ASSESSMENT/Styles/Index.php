@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
+       
       <link href="styles.css"rel="stylesheet" type="text/css">
       <title> Example Only</title>
    </head>
@@ -13,7 +14,7 @@
          <!-- note navbar is same width as banner -->
          <div class="navbar">
             <ul class="nav">
-               <li><a href="index.php">Index</a></li>
+               <li><a href="Index.php">Index</a></li>
                <li><a href="search.php">Search</a></li>arts
                <li><a href="results.php">Results</a></li>
                <li><a href="resultCategories.php">Result Categories</a></li>
