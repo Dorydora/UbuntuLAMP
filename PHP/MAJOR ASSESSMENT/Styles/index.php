@@ -46,12 +46,6 @@
          <div class="footer">
             <p id = "copyright">Copyright statement.</p>
             <a id = "login" href = "adminLogin.php">Login</a>
-         </div>
-      </div>
-      </div></div>
-   <div class="footer">
-   Login to Admin.
-    Copyright statement.
-</div>   
+         </div>  
    </body>
 </html>
