@@ -1,95 +1,70 @@
-body {
+body{
     font-family:verdana,arial,sans-serif;
     background:url("stack.png");
-}
-
-h3 {
-    font-family:verdana,arial,sans-serif;
-    color:#069;
-}
-
-.container {
-    margin:auto;
-    width:900px;
-    background-color:#fff;
-}
-
-.content {
-    width:750px;
-    float:left;
-    background:#ccc;
-}
-
-.innerContent {
-    width:750;
-    padding:20px;
-    margin:20px;
-    background:#fff;
-}
-
-.navbar {
-    width:150px;
-    float:left;
-    background-color:#069;
-    color:#fff;
-}
-
-.footer {
-    width:860px;
-    background-color:#069;
-    color:#fff;
-    padding:20px;
-    clear:both;
-}
-
-ul {
-    list-style:none;
-    margin:0;
-    padding:0;
-}
-
-ul.nav li {
-    display:inline;
-    float:left;
-}
-
-ul.nav a {
-    display:block;
-    padding:5px;
-    background-color:#006699;
-    width:160px;
-    color:#fff;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-ul.nav a:hover {
-    color:#ff0;
-}
-
-.tab {
-    margin:auto;
-    padding:5px;
-}
-
-.tab th {
-    color:#fff;
-    background-color:#069;
-}
+    }
+    h3{
+       font-family:verdana,arial,sans-serif;
+       color:#069;
+       }
+    .container{
+       margin:auto;
+       width:900px;
+       background-color:#fff;
+       
+       }
+    . content{
+       width:900px;
+       float:left;
+       background:#CCC;
+      }
+      .innerContent{
+      width:800;
+      padding:20px;
+      margin:20px;
+      }
+    .navbar{
+       width:150px;
+        float:left;
+        background-color:#069;
+        color:#fff;
+    }
+    .footer{
+      width:860px;
+      background-color:#069;
+      color:#fff;
+      padding:20px;
+      }
     
-.formtab {
-    margin:auto;
-}
-
-#copyright {
-    text-align:left;
-    float:left;
-    margin:auto;
-    margin-bottom: 20;
-}
-
-#login {
-    text-align:right;
-    float:right; 
-    margin:auto;
-}
+    ul{
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    ul.nav li{
+        display:inline;
+        float:left;
+    }
+    
+    ul.nav a{
+        display:block;
+        padding:5px;
+        background-color:#006699;
+        width:140px;
+        color:#fff;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    ul.nav a:hover{
+       color:#ff0;
+    }
+    .tab{
+       margin:auto;
+       padding:5px;
+       }
+    .tab th{
+       color:#fff;
+       background-color:#069;
+       }
+       .formtab{
+       margin:auto;
+       }
