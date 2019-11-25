@@ -16,7 +16,7 @@
                <li><a href="index.php">Index</a></li>
                <li><a href="search.php">Search</a></li>
                <li><a href="parts.php">Parts</a></li>
-               <li><a href="resultCategories.php">Result Categories</a></li>
+               <li><a href="partsCategories.php">Parts By Categories</a></li>
                <li><a href="reviews.php">Reviews</a></li>
                <li><a href="contactUs.php">Contact Us</a></li>
             </ul>
