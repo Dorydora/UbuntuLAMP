@@ -25,8 +25,7 @@
       <div class="content">
       <div class="innerContent">
          <p>arts
-         This is content. This should be displayed under the list.
-         Note this element is nested within the content div to allow the padding to work more effectively.
+         This is index page. Welcome.
          </p>
         
 
