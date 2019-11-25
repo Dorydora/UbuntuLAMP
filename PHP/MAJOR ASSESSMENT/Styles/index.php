@@ -14,7 +14,7 @@
          <!-- note navbar is same width as banner -->
          <div class="navbar">
             <ul class="nav">
-               <li><a href="Index.php">Index</a></li>
+               <li><a href="index.php">Index</a></li>
                <li><a href="search.php">Search</a></li>arts
                <li><a href="results.php">Results</a></li>
                <li><a href="resultCategories.php">Result Categories</a></li>

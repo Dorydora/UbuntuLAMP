@@ -34,7 +34,7 @@
                if(isset($_POST['submit'])) {
                   if(isset($_GET['go'])) {
                      $keyword=$_POST['searchstring'];
-                     $con = mysqli_connect("localhost","admin","Password1!", "CS_Tools");
+                     $con = mysqli_connect("localhost","admin","Password1!", "MGCSTools");
                      // Check connection
                      if (mysqli_connect_errno()) {
                         echo "Failed to connect to MySQL: " . mysqli_connect_error();
